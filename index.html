@@ -6,16 +6,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Calculadora IMC</title>
 </head>
 <body>
-    <div class="border d-flex container mt-5 border-dark bg-white rounded">
-        <form class="p-4 border-end border-dark d-flex flex-column col-6" id="emlementoEsquerdo">
+    <div class="border d-flex container my-5 border-dark bg-white rounded">
+        <form class="p-4 border-end border-dark d-flex flex-column col-6 text-center" id="emlementoEsquerdo">
             <h1>CALCULADORA IMC</h1>
             <p>Voçê está no seu peso ideal</p>
-            <input class="form-control" id="peso" type="number">
-            <input class="form-control my-4" id="altura" type="number">
-            <button class="btn btn-primary w-100" type="submit">Calcular</button>
+            <input placeholder="informe seu peso em kg" class="form-control" id="peso" type="number">
+            <input placeholder="informe seu peso em cm" class="form-control my-4" id="altura" type="number">
+            <button class="btn btn-primary w-100" type="submit" onclick="calculaIMC()">Calcular</button>
         </form>
         <div class=" col-6 d-flex flex-column align-items-center">
             <img width='256' src="./img/03.jpg" alt="">
@@ -23,6 +23,7 @@
             <p>Você está com sobrepeso</p>
         </div>
     </div>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
